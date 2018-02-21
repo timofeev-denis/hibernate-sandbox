@@ -14,15 +14,11 @@ import javax.persistence.Id;
 @AllArgsConstructor
 
 @Entity
-public class Employee {
+public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String firstName, lastName, description;
-
-    //    @Joi
-    private Long departmentId;
-
+    private String name;
 }
